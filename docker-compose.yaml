@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    php:
+        image: storyblok-php:dev
+        build:
+            context: .
+            dockerfile: ./config/docker/php/Dockerfile
+
+        volumes:
+            - .:/app
+
